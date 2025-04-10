@@ -1,25 +1,36 @@
-# 📰 News Dashboard
+# 📰 GyanBharati News Dashboard
 
-A simple web-based dashboard to display the latest news articles.
+A modern, responsive **news aggregator web app** that fetches real-time news from multiple categories like Trending, Politics, Sports, Health, and Technology. Built using **Flask**, **Tailwind CSS**, and deployed on **Render**.
+
+---
 
 ## 🚀 Features
 
-- Displays headlines and summaries from news sources
-- Filter by categories (AI, Machine Learning, Big Data, etc.)
-- Clean, responsive UI
-- Integrated with live news APIs
+- 🔍 Search news by topic or keyword
+- 🗞️ Browse news categories (Trending, Politics, Sports, etc.)
+- 💾 Save and manage your favorite articles
+- 🤖 Chatbot assistant (Botpress integration)
+- 📱 Responsive design for mobile and desktop
 
-## 🛠️ Tech Stack
+---
 
-- Python / Flask (or Django)
-- HTML / CSS / JS
-- NewsAPI 
-- Git + GitHub
+## 🧰 Tech Stack
 
-## 🔧 Setup Instructions
+| Tech       | Description                         |
+|------------|-------------------------------------|
+| Flask      | Backend framework (Python)          |
+| HTML/CSS   | Structure and styling               |
+| JavaScript | Dynamic UI interactivity            |
+| Botpress   | Integrated AI chatbot               |
+| NewsAPI    | Real-time news data                 |
+| Render     | Deployment platform (free tier)     |
+
+---
+
+## 🛠️ Local Setup
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ravsaheb7841/news_dashboard.git
-cd news_dashboard
-pip install -r requirements.txt
-python app.py
+git clone https://github.com/ravsaheb7841/news_dashboard_web.git
+cd news_dashboard_web
