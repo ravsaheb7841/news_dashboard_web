@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +10,11 @@
 </head>
 <body class="bg-gray-50">
   {% include 'partials/_header.html' %}
+
   <main class="container mx-auto px-4 py-8">
+    <!-- News Section -->
     <div id="newsSection" class="content-section">
+      <!-- Category Buttons -->
       <div class="mb-6">
         <div id="categoryButtons" class="flex flex-wrap gap-4 justify-start">
           <button class="category-btn bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-medium flex items-center space-x-2" data-category="trending">
@@ -32,11 +34,14 @@
           </button>
         </div>
       </div>
+
+      <!-- News Results -->
       {% include 'partials/_news.html' %}
     </div>
+
+    <!-- Saved Section -->
     <div id="savedSection" class="content-section hidden">
       <h2 class="text-2xl font-bold text-gray-800 mb-4">Saved Articles</h2>
-      <p class="text-gray-600">Your collection of saved articles</p>
       <div class="flex items-center space-x-2 mt-2">
         <select id="savedSort" class="border border-gray-300 rounded-md px-3 py-1 text-sm focus:ring-2 focus:ring-blue-500">
           <option value="newest">Newest First</option>
@@ -45,27 +50,43 @@
       </div>
       <div id="savedContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4"></div>
     </div>
-    <div id="aboutSection" class="content-section hidden">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">About GyanBharati</h2>
-      <p class="text-gray-600 mb-4">
-        <strong>GyanBharati News Dashboard</strong> is a modern news aggregator that fetches real-time news from reliable global sources. It allows users to search, sort, and save articles while offering a simple chatbot for help.
-      </p>
-      <ul class="list-disc list-inside text-gray-600 space-y-1">
-        <li>Real-time news from trusted outlets</li>
-        <li>Save articles for reading later</li>
-        <li>Chat assistant powered by AI</li>
-      </ul>
-    </div>
-    <div id="contactSection" class="content-section hidden">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
-      <p class="text-gray-600 mb-4">Have feedback or questions? Reach out to us:</p>
-      <ul class="text-gray-600 list-disc list-inside space-y-1">
-        <li>Email: <a href="mailto:support@gyanbharati.news" class="text-blue-600 hover:underline">support@gyanbharati.news</a></li>
-        <li>Phone: <a href="tel:+919876543210" class="text-blue-600 hover:underline">+91 98765 43210</a></li>
-        <li>Location: New Delhi, India</li>
-      </ul>
-    </div>
+
+    <!-- About Section -->
+<div id="aboutSection" class="content-section hidden">
+  <h2 class="text-2xl font-bold text-gray-800 mb-4">About GyanBharati</h2>
+  <p class="text-gray-600 mb-4">
+    <strong>GyanBharati News Dashboard</strong> is a real-time, AI-enhanced news platform delivering curated articles across various domains such as politics, technology, health, and sports.
+    Built with performance and accessibility in mind, the dashboard allows users to explore, search, and save news effortlessly across devices.
+  </p>
+  <p class="text-gray-600 mb-4">
+    Our mission is to make news discovery simple, relevant, and personalized. Whether you're a student, professional, or news enthusiast, GyanBharati empowers you to stay informed without distraction or clutter.
+  </p>
+  <ul class="list-disc list-inside text-gray-600 space-y-2">
+    <li>🌐 Aggregates from trusted global sources</li>
+    <li>🔎 Smart search with real-time updates</li>
+    <li>💾 Save and manage articles for offline reading</li>
+    <li>🤖 Integrated chatbot for support & quick navigation</li>
+    <li>📱 Optimized for Android, iOS, and desktop devices</li>
+  </ul>
+</div>
+
+<!-- Contact Section -->
+<div id="contactSection" class="content-section hidden">
+  <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+  <p class="text-gray-600 mb-4">
+    We’d love to hear from you! Whether it’s feedback, bug reports, collaboration inquiries, or just a hello — reach out anytime.
+  </p>
+  <ul class="text-gray-600 list-disc list-inside space-y-2">
+    <li>Email: <a href="mailto:support@gyanbharati.news" class="text-blue-600 hover:underline">support@gyanbharati.news</a></li>
+    <li>Phone: <a href="tel:+919876543210" class="text-blue-600 hover:underline">+91 98765 43210</a></li>
+    <li>Location: Jaysingpur, Maharashtra, India</li>
+    <li>Support Hours: Monday – Friday, 10:00 AM to 6:00 PM IST</li>
+    <li>Instagram: <a href="https://instagram.com/gyanbharati" target="_blank" class="text-blue-600 hover:underline">@gyanbharati</a></li>
+  </ul>
+</div>
+
   </main>
+
   {% include 'partials/_footer.html' %}
   <script src="/static/js/app.js"></script>
   <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
