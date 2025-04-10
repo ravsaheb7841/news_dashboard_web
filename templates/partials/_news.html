@@ -1,0 +1,24 @@
+<div class="mb-8">
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold text-gray-800">Latest News</h2>
+        <div class="flex space-x-2">
+            <select id="newsSort" class="p-2 border border-gray-300 rounded-lg">
+                <option value="newest">Newest First</option>
+                <option value="relevance">Most Relevant</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="newsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- News cards will be loaded here -->
+    </div>
+
+    <div id="newsPagination" class="flex justify-center mt-8">
+        <!-- Pagination will be loaded here -->
+    </div>
+
+    <div id="newsLoading" class="text-center py-8">
+        <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-600"></div>
+        <p class="mt-2 text-gray-600">Loading news...</p>
+    </div>
+</div>

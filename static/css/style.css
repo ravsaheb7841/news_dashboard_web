@@ -1,0 +1,89 @@
+/* Set the default font for the whole page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for content sections that appear/disappear */
+.content-section {
+    /* Smooth fade in/out effect */
+    transition: opacity 0.3s ease;
+}
+
+/* Style for the tab buttons at the top */
+.tab-button {
+    /* Smooth color change when hovering */
+    transition: all 0.2s ease;
+}
+
+/* Style for the currently active tab */
+.tab-button.active {
+    font-weight: 600; /* Makes text bolder */
+}
+
+/* Style for news article cards */
+.news-card {
+    /* Smooth movement and shadow effects */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* What happens when you hover over a news card */
+.news-card:hover {
+    transform: translateY(-5px); /* Moves card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+
+/* Colors for different sentiment indicators */
+.sentiment-positive {
+    border-left: 4px solid #10B981; /* Green */
+}
+
+.sentiment-negative {
+    border-left: 4px solid #EF4444; /* Red */
+}
+
+.sentiment-neutral {
+    border-left: 4px solid #3B82F6; /* Blue */
+}
+
+/* Chat message styles */
+/* User messages align to the right */
+.chat-message-user {
+    justify-content: flex-end;
+}
+
+/* Bot messages align to the left */
+.chat-message-bot {
+    justify-content: flex-start;
+}
+
+/* Style for user's chat bubbles */
+.chat-bubble-user {
+    background-color: #3B82F6; /* Blue background */
+    color: white; /* White text */
+    border-radius: 18px 18px 0 18px; /* Rounded corners */
+}
+
+/* Style for bot's chat bubbles */
+.chat-bubble-bot {
+    background-color: #E5E7EB; /* Light gray background */
+    color: #111827; /* Dark gray text */
+    border-radius: 18px 18px 18px 0; /* Rounded corners */
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Start position */
+    100% { transform: rotate(360deg); } /* End position */
+}
+
+/* Class to apply the spin animation */
+.animate-spin {
+    animation: spin 1s linear infinite; /* Spin continuously */
+}
+
+/* Styles for mobile devices (screens smaller than 768px) */
+@media (max-width: 768px) {
+    .news-card {
+        width: 100%; /* Cards take full width on small screens */
+    }
+}
